@@ -1,4 +1,14 @@
-all: 1/1
+CXXFLAGS="-std=c++20"
+
+
+all: 1/1 1/2
 
 1/1: 1/1.cpp
-	$(CXX) 1/1.cpp -o 1/1
+	$(CXX) 1/1.cpp -o 1/1 $(CXXFLAGS)
+
+1/2: 1/2.cpp
+	$(CXX) 1/2.cpp -o 1/2 $(CXXFLAGS)
+
+
+clean:
+	rm 1/1 1/2 2/1
