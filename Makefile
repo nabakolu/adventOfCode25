@@ -1,7 +1,7 @@
 CXXFLAGS="-std=c++20"
 
 
-all: 1/1 1/2 2/1 2/2 3/1
+all: 1/1 1/2 2/1 2/2 3/1 3/2
 
 1/1: 1/1.cpp
 	$(CXX) 1/1.cpp -o 1/1 $(CXXFLAGS)
@@ -18,5 +18,8 @@ all: 1/1 1/2 2/1 2/2 3/1
 3/1: 3/1.cpp
 	$(CXX) 3/1.cpp -o 3/1 $(CXXFLAGS)
 
+3/2: 3/2.cpp
+	$(CXX) 3/2.cpp -o 3/2 $(CXXFLAGS)
+
 clean:
-	rm 1/1 1/2 2/1 2/2 3/1
+	rm 1/1 1/2 2/1 2/2 3/1 3/2
